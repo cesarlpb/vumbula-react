@@ -14,11 +14,29 @@
 <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
 <script type="text/babel">
   
-  // Add your brand new component here
-  const Greeting = () => <h1>Hello World today!</h1>;
+//  Avatar
+  const Avatar = () => <img width="100" src="./profile.jpg"/>;
+
+//  Username
+const Username = () => <h4>cesarlpb</h4>;
+
+//  Bio
+const Bio = () => 
+    <p>
+    <strong>Bio</strong> <br/>
+    This is my awesome bio.
+    </p>;
+
+//  UserProfile
+const UserProfile = () => 
+    <div>
+        <Avatar/>
+        <Username/>
+        <Bio/>
+    </div>;
 
   ReactDOM.render(
-      <Greeting />,
+      <UserProfile/>,
       document.getElementById('root')
   );
 </script>
